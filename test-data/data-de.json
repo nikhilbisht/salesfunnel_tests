@@ -1,0 +1,150 @@
+{
+    "selectPreCondition": {
+        "title": "In 90 Sekunden Dein persönliches Angebot berechnen.",
+        "changeOfInsurer": {
+            "keepingCar": {
+                "mainText": "Das Auto ist schon versichert",
+                "subText": "(Versichererwechsel)"
+            },
+            "selectRegOwner": {
+                "carOwner": {
+                    "title": "Bist du der Halter des Autos (zugelassen auf dich)?",
+                    "values": [
+                        "Ja",
+                        "Nein"
+                    ]
+                },
+                "carStatus": {
+                    "title": "Das Auto war...",
+                    "values": [
+                        "bei Kauf gebraucht",
+                        "bei Kauf neu"
+                    ]
+                }
+            },
+            "selectVehicle": {
+                "title": "Wähle dein Auto aus",
+                "findCarBy": {
+                    "HSIN": {
+                        "tabTitle": "Über HSN /TSN finden"
+                    },
+                    "Model": {
+                        "tabTitle": "Über Marke & Modell finden",
+                        "searchBox": {
+                            "placeholder": "Automarke eingeben"
+                        }
+                    }
+                }
+            },
+            "selectModel": {
+                "title": "Wähle dein Automodell",
+                "searchBox": {
+                    "placeholder": "Modell eingeben"
+                }
+            },
+            "selectFuelType": {
+                "title": "Was tankst du?",
+                "values": [
+                    "Benzin",
+                    "Diesel"
+                ]
+            },
+            "selectEnginePower": {
+                "title": "Wie viele PS hat dein Auto?",
+                "values": [
+                    "66 kW / 90 PS",
+                    "70 kW / 95 PS",
+                    "74 kW / 101 PS",
+                    "88 kW / 120 PS",
+                    "92 kW / 125 PS"
+                ]
+            },
+            "selectEngine": {
+                "title": "Ist dein Auto dabei?"
+            },
+            "regDate": {
+                "firstReg": {
+                    "title": "Wann war die Erstzulassung?",
+                    "label": "Erstzulassung (Monat und Jahr)"
+                },
+                "carPurchaseDate": {
+                    "title": "Wann wurde das Auto auf dich zugelassen? Entspricht meistens dem Kaufdatum.",
+                    "label": "Zulassung auf dich (Monat und Jahr)"
+                }
+            }
+        },
+        "changeOfOwner": {
+            "buyingCar": {
+                "mainText": "Das Auto wird noch zugelassen oder umgemeldet",
+                "subText": "(Kauf oder Halterwechsel)"
+            },
+            "selectRegOwner": {
+                "carOwner": {
+                    "title": "Wird das Auto auf dich zugelassen?",
+                    "values": [
+                        "Ja",
+                        "Nein"
+                    ]
+                },
+                "carStatus": {
+                    "title": "Das Auto ist...",
+                    "values": [
+                        "bei Kauf gebraucht",
+                        "bei Kauf neu"
+                    ]
+                }
+            },
+            "selectVehicle": {
+                "title": "Wähle dein Auto aus",
+                "findCarBy": {
+                    "HSIN": {
+                        "tabTitle": "Über HSN /TSN finden"
+                    },
+                    "Model": {
+                        "tabTitle": "Über Marke & Modell finden",
+                        "searchBox": {
+                            "placeholder": "Automarke eingeben"
+                        }
+                    }
+                }
+            },
+            "selectModel": {
+                "title": "Wähle dein Automodell",
+                "searchBox": {
+                    "placeholder": "Modell eingeben"
+                }
+            },
+            "selectFuelType": {
+                "title": "Was tankst du?",
+                "values": [
+                    "Benzin",
+                    "Diesel"
+                ]
+            },
+            "selectEnginePower": {
+                "title": "Wie viele PS hat dein Auto?",
+                "values": [
+                    "66 kW / 90 PS",
+                    "70 kW / 95 PS",
+                    "74 kW / 101 PS",
+                    "88 kW / 120 PS",
+                    "92 kW / 125 PS"
+                ]
+            },
+            "selectEngine": {
+                "title": "Ist dein Auto dabei?"
+            },
+            "regDate": {
+                "firstReg": {
+                    "title": "Wann war die Erstzulassung?",
+                    "label": "Erstzulassung (Monat und Jahr)"
+                },
+                "carPurchaseDate": {
+                    "title": "Wann wurde das Auto auf dich zugelassen? Entspricht meistens dem Kaufdatum.",
+                    "label": "Zulassung auf dich (Monat und Jahr)"
+                }
+            }
+        },
+        "insStartDateQuestion": "Wann soll deine FRIDAY Versicherung starten?"
+    }
+}
