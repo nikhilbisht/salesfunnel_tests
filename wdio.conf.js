@@ -51,15 +51,16 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        maxInstances: 1,
+        maxInstances: 3,
         browserName: 'chrome',
         acceptInsecureCerts: true,
     },
     {
-        maxInstances: 1,
+        maxInstances: 3,
         browserName: 'MicrosoftEdge',
         acceptInsecureCerts: true,
-    }],
+    }
+],
     //
     // ===================
     // Test Configurations
@@ -189,8 +190,9 @@ exports.config = {
      * @param {Array.<String>} specs        List of spec file paths that are to be run
      * @param {Object}         browser      instance of created browser/device session
      */
-    // before: function (capabilities, specs) {
-    // },
+    before: function (capabilities, specs) {
+        browser.maximizeWindow()
+    },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
@@ -232,11 +234,9 @@ exports.config = {
      * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
     afterTest: function (test, context, { error, result, duration, passed, retries }) {
-        // console.log("inside after test screenshot should be captured")
-
         if (error) {
+            
             var filename = `Screenshot_${test.title}_${test.parent}`
-            console.log("filename is", filename)
             browser.saveScreenshot(`./reports/html-reports/screenshots/${filename}.png`)
         }
 

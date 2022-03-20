@@ -12,7 +12,6 @@ var data = require('../../test-data/data-de.json')
 describe("UI Tests for Car Brand Audi", () => {
 
     before(async () => {
-        await browser.maximizeWindow()
         await preCondition.open()
     })
 

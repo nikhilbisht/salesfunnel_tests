@@ -13,7 +13,7 @@
         "wdio-chromedriver-service": "^7.3.1"
     },
     "scripts": {
-        "test": "yarn wdio run wdio.conf.js --spec ./test/specs/ford.e2e.js"
+        "test": "yarn wdio run wdio.conf.js --spec ./test/specs/./test/specs/**/*.js"
     },
     "dependencies": {
         "@wdio/selenium-standalone-service": "^7.18.0",
