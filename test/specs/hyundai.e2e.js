@@ -7,6 +7,7 @@ const enginePower = require('../pageobjects/selectEnginePower')
 const engine = require('../pageobjects/selectEngine')
 const registrationDate = require('../pageobjects/registrationDate')
 var data = require('../../test-data/data-de.json')
+const utility = require('../pageobjects/utility')
 
 
 describe("UI Tests for Car Brand Hyundai", () => {
@@ -42,7 +43,7 @@ describe("UI Tests for Car Brand Hyundai", () => {
     it("Select Purchase or Change Of Owner", async () => {
 
         //Input today's date in Insurance Start Date
-        await preCondition.enterInsStartDate('20.03.2022')
+        await preCondition.enterInsStartDate(await utility.todayDate())
         //Click on Submit Button
         await preCondition.submitBtn.click()
     })
