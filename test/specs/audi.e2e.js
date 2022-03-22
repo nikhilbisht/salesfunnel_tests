@@ -42,7 +42,7 @@ describe("UI Tests for Car Brand Audi", () => {
     it("Select Purchase or Change Of Owner", async () => {
 
         //Input today's date in Insurance Start Date
-        await preCondition.enterInsStartDate(await utility.todayDate())
+        await preCondition.enterInsStartDate(await utility.getDate(1))
         //Click on Submit Button
         await preCondition.submitBtn.click()
     })
