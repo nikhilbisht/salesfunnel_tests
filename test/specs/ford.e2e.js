@@ -45,7 +45,7 @@ describe("UI Tests for Car Brand Ford", () => {
         //Selecting the option "Purchase or Change Of Owner"
         await preCondition.selectOption(data.selectPreCondition.changeOfInsurer.keepingCar.mainText)
         //Input today's date in Insurance Start Date
-        await preCondition.enterInsStartDate(await utility.todayDate())
+        await preCondition.enterInsStartDate(await utility.getDate(1))
         //Click on Submit Button
         await preCondition.submitBtn.click()
     })
